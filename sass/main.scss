@@ -1,0 +1,233 @@
+// Import Global Rules
+@use './global-rules';
+
+$color_1: #fff;
+$color_2: var(--main-color);
+
+@keyframes btn-anim1 {
+    0% {
+        left: -100%;
+    }
+
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+
+@keyframes btn-anim2 {
+    0% {
+        top: -100%;
+    }
+
+    50%,
+    100% {
+        top: 100%;
+    }
+}
+
+@keyframes btn-anim3 {
+    0% {
+        right: -100%;
+    }
+
+    50%,
+    100% {
+        right: 100%;
+    }
+}
+
+@keyframes btn-anim4 {
+    0% {
+        bottom: -100%;
+    }
+
+    50%,
+    100% {
+        bottom: 100%;
+    }
+}
+
+@keyframes spin {
+    from {
+            transform: rotate(0deg);
+        }
+    
+        to {
+            transform: rotate(360deg);
+        }
+}
+
+.container {
+    .inner-container {
+        display: flex;
+        flex-wrap: wrap;
+        .user-box {
+            position: relative;
+            width: 46%;
+            margin-right: 2%;
+            margin-left: 2%;
+            input {
+                width: 100%;
+                padding: 10px 0;
+                font-size: 16px;
+                color: $color_1;
+                margin-bottom: 30px;
+                border: none;
+                border-bottom: 1px solid #fff;
+                outline: none;
+                background: transparent;
+    
+                &:focus {
+                    ~ {
+                        label {
+                            top: -30px;
+                            left: 0;
+                            color: $color_2;
+                            font-size: 14px;
+                        }
+                    }
+                }
+    
+                &:valid {
+                    ~ {
+                        label {
+                            top: -30px;
+                            left: 0;
+                            color: $color_2;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+            
+            label {
+                position: absolute;
+                top: 0;
+                left: 0;
+                padding: 10px 0;
+                font-size: 16px;
+                color: $color_1;
+                pointer-events: none;
+                transition: .5s;
+            }
+            .date {
+                top: -24px;
+                left: 0;
+                font-size: 14px;
+            }
+        }
+        
+    }
+
+    form {
+            a {
+                position: relative;
+                display: block;
+                padding: 5px 10px;
+                background-color: var(--background);
+                overflow: hidden;
+                margin-top: 40px;
+                margin-left: 2%;
+                margin-right: 2%;
+                input[type=submit] {
+                    border: none;
+                    color: $color_2;
+                    letter-spacing: 4px;
+                        font-size: 20px;
+                        font-weight: bold;
+                        transition: .5s;
+                        text-align: center;
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        background-color: transparent;
+                        width: 100%;
+                        height: 30px;
+                    &:hover {
+                            background: var(--main-color);
+                            color: $color_1;
+                            border-radius: 5px;
+                        }
+                }
+            }
+            
+                a {
+                    &:hover {
+                        background: var(--main-color);
+                        color: $color_1;
+                        border-radius: 5px;
+                        // box-shadow: 0 0 5px var(--main-color-alt), 0 0 25px var(--main-color-alt), 0 0 50px var(--main-color-alt), 0 0 100px var(--main-color-alt);
+                    }
+            
+                    span {
+                        position: absolute;
+                        display: block;
+            
+                        &:nth-child(1) {
+                            top: 0;
+                            left: -100%;
+                            width: 100%;
+                            height: 2px;
+                            background: linear-gradient(90deg, transparent, var(--main-color-alt));
+                            animation: btn-anim1 1s linear infinite;
+                        }
+            
+                        &:nth-child(2) {
+                            top: -100%;
+                            right: 0;
+                            width: 2px;
+                            height: 100%;
+                            background: linear-gradient(180deg, transparent, var(--main-color-alt));
+                            animation: btn-anim2 1s linear infinite;
+                            animation-delay: .25s;
+                        }
+            
+                        &:nth-child(3) {
+                            bottom: 0;
+                            right: -100%;
+                            width: 100%;
+                            height: 2px;
+                            background: linear-gradient(270deg, transparent, var(--main-color-alt));
+                            animation: btn-anim3 1s linear infinite;
+                            animation-delay: .5s;
+                        }
+            
+                        &:nth-child(4) {
+                            bottom: -100%;
+                            left: 0;
+                            width: 2px;
+                            height: 100%;
+                            background: linear-gradient(360deg, transparent, var(--main-color-alt));
+                            animation: btn-anim4 1s linear infinite;
+                            animation-delay: .75s;
+                        }
+                    }
+                }
+            }
+        }
+
+
+
+.images-box{
+    .shadow {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    }
+    .close {
+    position: absolute;
+    top: 0;
+    animation-duration: 2.5s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-name: spin;
+    }
+    .arrow {
+    position: absolute;
+    bottom: 5%;
+    left: -100px;
+    width: 300px;
+    }
+} 
+

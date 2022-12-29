@@ -1,0 +1,424 @@
+/* Start Global Rules */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;800&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --main-color: #ab0202;
+  --main-color-alt: #e83e8c;
+  --main-transition: 0.3s;
+  --main-padding-top: 100px;
+  --background: #ececec;
+}
+
+::-moz-selection {
+  color: #fff;
+  background: var(--main-color);
+}
+
+::selection {
+  color: #fff;
+  background: var(--main-color);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  background: url(../imgs/body_layer.7a99e8e81c0b7b80.webp);
+  color: #2b2b2b;
+  font-weight: 300;
+  line-height: 25px;
+  width: 100%;
+  overflow-x: hidden;
+  cursor: url(../imgs/mouse0.e8d49e0c696a1899.webp), auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 50px auto;
+  padding: 50px;
+  background: rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+          box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+}
+
+h2 {
+  color: var(--main-color);
+  letter-spacing: -2px;
+  font-size: 60px;
+  font-weight: 800;
+  margin: 0 0 30px;
+  padding: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+select {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  font-size: 16px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 10px;
+  width: 46%;
+  background-color: #e8eeef;
+  color: #3c3c3c;
+  margin-right: 2%;
+  margin-left: 2%;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+input[type=file]::-webkit-file-upload-button {
+  margin-right: 20px;
+  border: none;
+  background: #e8eeef;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: #3c3c3c;
+  cursor: pointer;
+  -webkit-transition: background 0.2s ease-in-out;
+  transition: background 0.2s ease-in-out;
+}
+
+input[type=file]::file-selector-button {
+  margin-right: 20px;
+  border: none;
+  background: #e8eeef;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: #3c3c3c;
+  cursor: pointer;
+  -webkit-transition: background 0.2s ease-in-out;
+  transition: background 0.2s ease-in-out;
+}
+
+input[type=file]::-webkit-file-upload-button:hover {
+  background: var(--main-color);
+  color: #fff;
+}
+
+input[type=file]::file-selector-button:hover {
+  background: var(--main-color);
+  color: #fff;
+}
+
+#thank-you-message {
+  display: none;
+  margin: 50px auto;
+}
+
+#thank-you-message.show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px;
+  background-color: var(--background);
+  color: var(--main-color);
+  font-size: 24px;
+  border-radius: 5px;
+  width: 100%;
+  position: relative;
+  -webkit-transition: all 5s ease-in-out;
+  transition: all 5s ease-in-out;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 992px) {
+  h2 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .user-box, select {
+    width: 96% !important;
+  }
+  .arrow {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* End Global Rules */
+@-webkit-keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+  50%, 100% {
+    left: 100%;
+  }
+}
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+  50%, 100% {
+    left: 100%;
+  }
+}
+@-webkit-keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+  50%, 100% {
+    top: 100%;
+  }
+}
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+  50%, 100% {
+    top: 100%;
+  }
+}
+@-webkit-keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+  50%, 100% {
+    right: 100%;
+  }
+}
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+  50%, 100% {
+    right: 100%;
+  }
+}
+@-webkit-keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+  50%, 100% {
+    bottom: 100%;
+  }
+}
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+  50%, 100% {
+    bottom: 100%;
+  }
+}
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.container .inner-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.container .inner-container .user-box {
+  position: relative;
+  width: 46%;
+  margin-right: 2%;
+  margin-left: 2%;
+}
+.container .inner-container .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+.container .inner-container .user-box input:focus ~ label {
+  top: -30px;
+  left: 0;
+  color: var(--main-color);
+  font-size: 14px;
+}
+.container .inner-container .user-box input:valid ~ label {
+  top: -30px;
+  left: 0;
+  color: var(--main-color);
+  font-size: 14px;
+}
+.container .inner-container .user-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.container .inner-container .user-box .date {
+  top: -24px;
+  left: 0;
+  font-size: 14px;
+}
+.container form a {
+  position: relative;
+  display: block;
+  padding: 5px 10px;
+  background-color: var(--background);
+  overflow: hidden;
+  margin-top: 40px;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+.container form a input[type=submit] {
+  border: none;
+  color: var(--main-color);
+  letter-spacing: 4px;
+  font-size: 20px;
+  font-weight: bold;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: transparent;
+  width: 100%;
+  height: 30px;
+}
+.container form a input[type=submit]:hover {
+  background: var(--main-color);
+  color: #fff;
+  border-radius: 5px;
+}
+.container form a:hover {
+  background: var(--main-color);
+  color: #fff;
+  border-radius: 5px;
+}
+.container form a span {
+  position: absolute;
+  display: block;
+}
+.container form a span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: -webkit-gradient(linear, left top, right top, from(transparent), to(var(--main-color-alt)));
+  background: linear-gradient(90deg, transparent, var(--main-color-alt));
+  -webkit-animation: btn-anim1 1s linear infinite;
+          animation: btn-anim1 1s linear infinite;
+}
+.container form a span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(var(--main-color-alt)));
+  background: linear-gradient(180deg, transparent, var(--main-color-alt));
+  -webkit-animation: btn-anim2 1s linear infinite;
+          animation: btn-anim2 1s linear infinite;
+  -webkit-animation-delay: 0.25s;
+          animation-delay: 0.25s;
+}
+.container form a span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: -webkit-gradient(linear, right top, left top, from(transparent), to(var(--main-color-alt)));
+  background: linear-gradient(270deg, transparent, var(--main-color-alt));
+  -webkit-animation: btn-anim3 1s linear infinite;
+          animation: btn-anim3 1s linear infinite;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+.container form a span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, from(transparent), to(var(--main-color-alt)));
+  background: linear-gradient(360deg, transparent, var(--main-color-alt));
+  -webkit-animation: btn-anim4 1s linear infinite;
+          animation: btn-anim4 1s linear infinite;
+  -webkit-animation-delay: 0.75s;
+          animation-delay: 0.75s;
+}
+
+.images-box .shadow {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+}
+.images-box .close {
+  position: absolute;
+  top: 0;
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-name: spin;
+          animation-name: spin;
+}
+.images-box .arrow {
+  position: absolute;
+  bottom: 5%;
+  left: -100px;
+  width: 300px;
+}
+/*# sourceMappingURL=main.css.map */

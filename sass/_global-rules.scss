@@ -1,0 +1,154 @@
+/* Start Global Rules */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;800&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #ab0202;
+    --main-color-alt: #e83e8c;
+    --main-transition: 0.3s;
+    --main-padding-top: 100px;
+    --background: #ececec;
+    
+}
+
+::selection {
+    color: #fff;
+    background: var(--main-color);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    background: url(../imgs/body_layer.7a99e8e81c0b7b80.webp);
+    color: #2b2b2b;
+    font-weight: 300;
+    line-height: 25px;
+    width: 100%;
+    overflow-x: hidden;
+    cursor: url(../imgs/mouse0.e8d49e0c696a1899.webp), auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 50px auto;
+    padding: 50px;
+    background: rgba(0,0,0,.2);
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+}
+
+h2 {
+    color: var(--main-color);
+    letter-spacing: -2px;
+    font-size: 60px;
+    font-weight: 800;
+    margin: 0 0 30px;
+    padding: 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+select {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    font-size: 16px;
+    height: fit-content;
+    padding: 10px;
+    width: 46%;
+    background-color: #e8eeef;
+    color: #3c3c3c;
+    margin-right: 2%;
+    margin-left: 2%;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+
+input[type=file]::file-selector-button {
+    margin-right: 20px;
+    border: none;
+    background: #e8eeef;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #3c3c3c;
+    cursor: pointer;
+    transition: background .2s ease-in-out;
+}
+
+input[type=file]::file-selector-button:hover {
+    background: var(--main-color);
+    color: #fff;
+}
+
+#thank-you-message {
+    display: none;
+    margin: 50px auto;
+}
+
+#thank-you-message.show {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: var(--background);
+    color: var(--main-color);
+    font-size: 24px;
+    border-radius: 5px;
+    width: 100%;
+    position: relative;
+    transition: all 5s ease-in-out;
+    align-items: center;
+}
+
+
+@media (max-width: 992px) {
+    h2 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 767px) {
+    .user-box, select {
+        width: 96% !important;
+    }
+    .arrow {
+        display: none;
+    }
+}
+// Small Screen
+@media(min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+// Medium Screen
+@media(min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+// Large Screen
+@media(min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* End Global Rules */

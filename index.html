@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Digital Bond | Form</title>
+    <!-- Normalize -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Style -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h2>Submission</h2>
+        <div class="popup" id="thank-you-message">
+            <img src="./imgs/thank-you.png" alt="thanks">
+            <span>We Will Get In Touch With You Soon!</span>
+        </div>
+        <form action="">
+            <div class="inner-container">
+                <div class="user-box">
+                    <input type="text" name="username" required="">
+                    <label>Full Name</label>
+                </div>
+                <div class="user-box">
+                    <input type="text" name="position" required="">
+                    <label>Position</label>
+                </div>
+                <div class="user-box">
+                    <input type="email" name="email" required="">
+                    <label>Email</label>
+                </div>
+                <div class="user-box">
+                    <input type="tel" name="phone" pattern="^(00201|\+201|01)[0-2,5]{1}[0-9]{8}$" required="">
+                    <label>Mobile Number</label>
+                </div>
+                <div class="user-box">
+                    <input type="text" name="address" required="">
+                    <label>Address</label>
+                </div>
+                <div class="user-box">
+                    <input type="number" name="salary" required="">
+                    <label>Expected Salary</label>
+                </div>
+                <div class="user-box">
+                    <input type="date" name="a-date" value="" required min="" max="">
+                    <label class="date">Availability Date</label>
+                </div>
+                <div class="user-box">
+                    <input type="date" name="b-date" value="" required min="" max="">
+                    <label class="date">Date of Birth</label>
+                </div>
+                <select>
+                    <option hidden>Marital Status</option>
+                    <option value="">Single</option>
+                    <option value="">Married</option>
+                </select>
+                <div class="user-box">
+                    <input type="file" name="uploadcv" value="" required min="" max="">
+                    <label class="date">Upload CV</label>
+                </div>
+            </div>
+                <a href="#">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <input type="submit" value="Submit">
+                </a>
+        </form>
+    </div>
+    <div class="images-box">
+        <img class="shadow" src="./imgs/shadow_effect_right.webp" alt="">
+        <img class="close" src="./imgs/close_icon.webp" alt="">
+        <img class="arrow" src="./imgs/left_arrow_db.webp" alt="">
+    </div>
+    <script src="/js/script.js"></script>
+</body>
+</html>
+
+
